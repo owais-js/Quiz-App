@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <script src="./quizjs.js"></script>
+    <style>
+        .hide{
+         display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="startQuiz()">Start</button>
+    <div id="question-container" class="hide">
+      <h3 id="title"></h3>
+      <div id="options">
+        
+      </div>
+      <!-- <div><input name="q1" type="radio"/>hyper text</div>
+      <div><input name="q1" type="radio"/>hyer text</div>
+      <div><input name="q1" type="radio"/>hyper xt</div>
+      <div><input name="q1" type="radio"/>hyper txt</div> -->
+      <br>
+      <button id="nextbtn" onclick="next()">Next</button>
+    </div>
+    <div id="result" class="hide">Result <span id="mrk"></span>
+        <button onclick="restart()">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
